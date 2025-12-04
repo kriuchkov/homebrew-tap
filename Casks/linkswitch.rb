@@ -1,6 +1,6 @@
 cask "linkswitch" do
-  version "1.0.0"
-  sha256 "f50e1d20f5722cc31812fe80d396483c5a935b96247f36a58e436516d8ac2a51"
+  version "1.0.1"
+  sha256 "a24c2e8afd226f029cd9c02df7e5454904c145a25a2ddbb65c6b6768ebc6f9cb"
 
   url "https://github.com/kriuchkov/linkswitch/releases/download/v#{version}/LinkSwitch.zip"
   name "LinkSwitch"
