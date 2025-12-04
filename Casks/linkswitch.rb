@@ -19,7 +19,7 @@ cask "linkswitch" do
                    args: ["-f", "#{appdir}/LinkSwitch.app"]
   end
 
-  uninstall_postflight do
+  uninstall_preflight do
     system_command "/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister",
                    args: ["-u", "#{appdir}/LinkSwitch.app"]
   end
