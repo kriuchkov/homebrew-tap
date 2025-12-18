@@ -5,21 +5,21 @@
 class Tock < Formula
   desc "Tock is a simple timetracker for the command line"
   homepage "https://github.com/kriuchkov/tock"
-  version "0.7.0"
+  version "0.8.0"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kriuchkov/tock/releases/download/v0.7.0/tock_Darwin_x86_64.tar.gz"
-      sha256 "8341b5e9a64c18613639b2912f899936865682d58e2842496f44e19fd39fc0b0"
+      url "https://github.com/kriuchkov/tock/releases/download/v0.8.0/tock_Darwin_x86_64.tar.gz"
+      sha256 "c709a607c6f2d3838489ca9ef380efa1f365afd4fc6216f7c5aa5118fd91c61d"
 
       def install
         bin.install "tock"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kriuchkov/tock/releases/download/v0.7.0/tock_Darwin_arm64.tar.gz"
-      sha256 "1f6c406118670ffeb943692d088a3586d9245d276f7e461b95bc4f7f84c8026e"
+      url "https://github.com/kriuchkov/tock/releases/download/v0.8.0/tock_Darwin_arm64.tar.gz"
+      sha256 "19e22e62d49f846324620dddf3d3932f8eba10db31d614618451936046a6a9e2"
 
       def install
         bin.install "tock"
@@ -29,15 +29,15 @@ class Tock < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kriuchkov/tock/releases/download/v0.7.0/tock_Linux_x86_64.tar.gz"
-      sha256 "bfc160393761715d008373174c069d72308becfcdc7f248c234523f42942fdbe"
+      url "https://github.com/kriuchkov/tock/releases/download/v0.8.0/tock_Linux_x86_64.tar.gz"
+      sha256 "e000e51d19d1d12e392cfaaafb54f7904fdbf4b0ce0545c0b3e17042f67f7588"
       def install
         bin.install "tock"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kriuchkov/tock/releases/download/v0.7.0/tock_Linux_arm64.tar.gz"
-      sha256 "0a7a5dd0f5f17725d316e52a858615011afcde3a12a1059db1617c425e0eef61"
+      url "https://github.com/kriuchkov/tock/releases/download/v0.8.0/tock_Linux_arm64.tar.gz"
+      sha256 "36d864986e75982acdf12ac49d45268be21cead54e0eb8d53fc1d235546536a5"
       def install
         bin.install "tock"
       end
