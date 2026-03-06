@@ -22,7 +22,15 @@ brew install --cask linkswitch
 
 ## Available Formulas
 
-_Coming soon..._
+| Formula | Description |
+|---------|-------------|
+| `tock` | Tock is a powerful time tracking tool for the command line. |
+
+### Install a formula
+
+```sh
+brew install tock
+```
 
 ## Updating
 

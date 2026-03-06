@@ -22,3 +22,6 @@ help:
 	@echo ""
 	@echo "Available casks:"
 	@ls -1 Casks/*.rb 2>/dev/null | xargs -I {} basename {} .rb | sed 's/^/  - /'
+	@echo ""
+	@echo "Available formulas:"
+	@ls -1 Formula/*.rb 2>/dev/null | xargs -I {} basename {} .rb | sed 's/^/  - /'
