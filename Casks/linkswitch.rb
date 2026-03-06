@@ -2,7 +2,7 @@ cask "linkswitch" do
   version "1.0.9"
   sha256 "d74250d9a38aeaa172aa909b8b08217c73dba7b4b053ebdf37d7a8f141b3555d"
 
-  url "https://github.com/kriuchkov/linkswitch/releases/download/v1.0.8/LinkSwitch.zip"
+  url "https://github.com/kriuchkov/linkswitch/releases/download/v1.0.9/LinkSwitch.zip"
   name "LinkSwitch"
   desc "Ultra-lightweight native link router for macOS"
   homepage "https://github.com/kriuchkov/linkswitch"
