@@ -11,7 +11,7 @@ class Tock < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kriuchkov/tock/releases/download/v1.8.1/tock_Darwin_x86_64.tar.gz"
-      sha256 "6b851a38f4cf23726bcb263f7feaf63763c4e3a944a7fece7005a31ccd6bd737"
+      sha256 "3133abacf6b362b2ad1063626e72b5693004ab79f69895d65220ea063856da96"
 
       define_method(:install) do
         bin.install "tock"
@@ -19,7 +19,7 @@ class Tock < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kriuchkov/tock/releases/download/v1.8.1/tock_Darwin_arm64.tar.gz"
-      sha256 "5014b0e8752eaaedc5f1be428d6761efdeeb3713e2ccecfdd5ef74d13123c9b9"
+      sha256 "cd71ae7db8ae2d4cab7dcc25dab2fbed9724d5f5efce315a1d9a7a1678011bc9"
 
       define_method(:install) do
         bin.install "tock"
@@ -30,14 +30,14 @@ class Tock < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/kriuchkov/tock/releases/download/v1.8.1/tock_Linux_x86_64.tar.gz"
-      sha256 "a03dafb6943d5893bcad799b6dea8bade440dbc073375bed882ea5501664ba7d"
+      sha256 "6bf3d87dff9f330581e526ea9c9e228db98e7092a7727c2087a034814cbc7f87"
       define_method(:install) do
         bin.install "tock"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kriuchkov/tock/releases/download/v1.8.1/tock_Linux_arm64.tar.gz"
-      sha256 "9ea8f45a154f93a79fcbc90b0181a3db6b6e6d965456be6363524518a2d00a6f"
+      sha256 "765fcd68795ac4dea1c385f53803779a30a59f3e90d027c3beb7a1e7c5de4777"
       define_method(:install) do
         bin.install "tock"
       end
