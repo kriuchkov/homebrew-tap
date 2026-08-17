@@ -5,13 +5,13 @@
 class Postero < Formula
   desc "Postero (pstr) is a terminal-first email client (TUI + CLI)"
   homepage "https://github.com/kriuchkov/postero"
-  version "1.0.1"
+  version "1.0.2"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kriuchkov/postero/releases/download/v1.0.1/postero_Darwin_x86_64.tar.gz"
-      sha256 "319f262870087b81c25e6a64750483c8cdb9eea43ede7d7432a1fae88259d84b"
+      url "https://github.com/kriuchkov/postero/releases/download/v1.0.2/postero_Darwin_x86_64.tar.gz"
+      sha256 "3b929ce4c4cac527edcc283566c771de5809f9b52bac21fe3d5c6b000797568f"
 
       define_method(:install) do
         bin.install "pstr"
@@ -19,8 +19,8 @@ class Postero < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kriuchkov/postero/releases/download/v1.0.1/postero_Darwin_arm64.tar.gz"
-      sha256 "9325901f007c007ef7b1a4fdb148c86bdf0f8c4fd2711f7df0643b3f36b21815"
+      url "https://github.com/kriuchkov/postero/releases/download/v1.0.2/postero_Darwin_arm64.tar.gz"
+      sha256 "d7eeb04625cf801400243b7983a98d753e3593db9a6c5aff03e87459142caf4d"
 
       define_method(:install) do
         bin.install "pstr"
@@ -31,16 +31,16 @@ class Postero < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kriuchkov/postero/releases/download/v1.0.1/postero_Linux_x86_64.tar.gz"
-      sha256 "4d74cb8c20518c132967b01bdc135ecd7e17a92c41919245c4bf2c3624af4373"
+      url "https://github.com/kriuchkov/postero/releases/download/v1.0.2/postero_Linux_x86_64.tar.gz"
+      sha256 "8650749ac7d0d4ef953cab75e1e41146170adf5a17fa4b84952b1a9035cad82b"
       define_method(:install) do
         bin.install "pstr"
         generate_completions_from_executable(bin/"pstr", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kriuchkov/postero/releases/download/v1.0.1/postero_Linux_arm64.tar.gz"
-      sha256 "e01eb7047f7636a18fe3d3d0fc68eebdb860c1c3733f58e4632cf532c0f95c6b"
+      url "https://github.com/kriuchkov/postero/releases/download/v1.0.2/postero_Linux_arm64.tar.gz"
+      sha256 "ff00fb1677c86586580d271d89788f7014e4fde9419e82f8a7c4dab5f09bb915"
       define_method(:install) do
         bin.install "pstr"
         generate_completions_from_executable(bin/"pstr", "completion")
